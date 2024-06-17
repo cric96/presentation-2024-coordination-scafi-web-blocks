@@ -39,7 +39,7 @@
 	\begin{alertblock}{Definition}
 		\begin{itemize}
 			\item 
-			\textbf{Swarm behaviours} are emergent properties of the interactions among \underline{a large number} of simple agents.
+			\textbf{Swarm behaviours} emerge from the interactions among \underline{a large number} of simple agents.
 		
 		\end{itemize}
 	\end{alertblock}
@@ -61,7 +61,7 @@
 	\end{center}
 	\end{frame}
 	\begin{frame}{Programming Swarms}
-		\begin{exampleblock}{Solution}
+		\begin{exampleblock}{Solutions}
 			\begin{itemize}
 					\item Bottom-up approach: mimicking nature by programming individual agents.
 					\begin{itemize}
@@ -93,7 +93,7 @@
 		\\[-0.05cm]%
 		\alert{behavior:} \emph{repeated} execution of \underline{async rounds}%
 		\\[-0.05cm]%
-		\alert{formal model of executions:} event structures 
+		%\alert{formal model of executions:} event structures 
 	\end{exampleblock}
 	\begin{exampleblock}{\footnotesize Programming Model}
 	\scriptsize
@@ -161,29 +161,35 @@
 	\includegraphics[width=1cm]{img/scafiblocks-logo.png}
 	\Large{
 		\begin{itemize}
-			\item \alert{Visual programming environment} for aggregate computing
+			\item \alert{Visual programming environment} for aggregate computing based on ScaFi
 			\item \alert{Low-code} approach to swarm design
 			\item \alert{Interactive} and \alert{intuitive} design and debugging
 		\end{itemize}}
+\end{frame}
+\begin{frame}{ScaFi Blocks -- Components}
+	\begin{itemize}
+		\item \alert{Block Library:} Curated set of blocks for aggregate computing.
+		%\begin{itemize}
+		%	\item Conditions: if-else blocks
+		%	\item Actuations: change the environment (movement and leds)
+		%	\item Sensing: perceive the environment (boolean sensors)
+		%	\item Aggregate computing primitives: gradient, broadcast, collect, etc.
+		%	\item API Examples: swarming behaviors 
+		%\end{itemize}
+
+		\includegraphics[width=0.5\textwidth]{img/channel-visual.png}
+		\includegraphics[width=0.5\textwidth]{img/distance-example.png}
+		
+		\includegraphics[width=0.25\textwidth]{img/movement-example.png}
+		\item \alert{Workspace:} Drag-and-drop interface for designing swarm behaviors (based on Blockly)
+		\item \alert{Simulator:} Instant execution of the designed behavior (based on ScaFi Web)
+	\end{itemize}
 \end{frame}
 \begin{frame}{ScaFi-Blocks -- Architecture}
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/scafi-blocks-architecture.drawio.pdf}
 \end{frame}
-\begin{frame}{ScaFi Blocks -- Components}
-	\begin{itemize}
-		\item \alert{Block Library:} Curated set of blocks for aggregate computing.
-		\begin{itemize}
-			\item Conditions: if-else blocks
-			\item Actuations: change the environment (movement and leds)
-			\item Sensing: perceive the environment (boolean sensors)
-			\item Aggregate computing primitives: gradient, broadcast, collect, etc.
-			\item API Examples: swarming behaviors 
-		\end{itemize}
-		\item \alert{Workspace:} Drag-and-drop interface for designing swarm behaviors (based on Blockly)
-		\item \alert{Simulator:} Instant execution of the designed behavior (based on ScaFi Web)
-	\end{itemize}
-\end{frame}
+
 \begin{frame}{ScaFi-Blocks -- Interface}
 	\centering
 	\includegraphics[width=\textwidth]{img/scafiblocks.png}
@@ -201,7 +207,13 @@
 		\item \alert{Rapid feedback loop} for faster learning
 		\item \alert{Knowledge transfer} from visual to textual code
 	\end{itemize}
-	\item \alert{Future work:} Evaluation with non-experts, integration with real robots, and extension to more complex behaviors.
+	\begin{exampleblock}{Future Works}
+		\begin{itemize}
+		\item \textbf{Evaluation} with non-experts
+		\item \textbf{Integration} with real robots
+		\item \textbf{Extension} to more complex behaviors
+		\end{itemize}
+	\end{exampleblock}
 \end{itemize}
 \end{frame}
 \end{document}
